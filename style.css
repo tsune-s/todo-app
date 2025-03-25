@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', 'Arial', sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #48bb78 0%, #2f855a 100%);
     min-height: 100vh;
     padding: 20px;
     color: #2d3748;
@@ -20,6 +20,7 @@ body {
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
+    position: relative;
 }
 
 h1 {
@@ -49,13 +50,13 @@ input[type="text"] {
 
 input[type="text"]:focus {
     outline: none;
-    border-color: #667eea;
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+    border-color: #48bb78;
+    box-shadow: 0 0 0 3px rgba(72, 187, 120, 0.2);
 }
 
 button {
     padding: 12px 24px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
     color: white;
     border: none;
     border-radius: 8px;
@@ -126,7 +127,7 @@ input[type="checkbox"] {
     height: 20px;
     margin-right: 12px;
     cursor: pointer;
-    accent-color: #667eea;
+    accent-color: #48bb78;
 }
 
 span {
@@ -146,19 +147,21 @@ span {
 }
 
 .export-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
 }
 
 .export-btn {
-    background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+    background: linear-gradient(135deg, #2f855a 0%, #276749 100%);
     padding: 12px 24px;
     font-size: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .export-btn:hover {
-    background: linear-gradient(135deg, #38a169 0%, #48bb78 100%);
+    background: linear-gradient(135deg, #276749 0%, #2f855a 100%);
 }
 
 /* アニメーション */
